@@ -18,7 +18,7 @@ function Layout(props) {
                         <Image
                             src="/images/profile.png"
                             className={`${utilsStyles.borderCircle} ${styles.headerHomeImage}`}
-                            width='8rem' height='8rem'/>
+                            width='100px' height='100px'/>
                         <h1 className={utilsStyles.heading2Xl}>{name}</h1>
                     </>
                 ) : (

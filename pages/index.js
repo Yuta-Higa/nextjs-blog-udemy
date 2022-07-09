@@ -26,7 +26,7 @@ export default function Home({allPostsData}) {
               </title>
           </Head>
           <section>
-              <p className={utilsStyles.headingMd}>駆け出しエンジニア見習いです</p>
+              <p className={utilsStyles.headingMd}>駆け出しエンジニア見習いです。好きな言語はjavascriptです。</p>
           </section>
           <section>
               <h2>🗒エンジニアのブログ</h2>

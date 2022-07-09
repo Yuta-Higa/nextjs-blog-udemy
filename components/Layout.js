@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from './layout.module.css'
 import utilsStyles from '../styles/utils.module.css'
 import Link from "next/link";
+import Image from "next/image";
 const name = 'Ukyo'
 export const siteTitle = "next.js blog"
 function Layout(props) {
@@ -14,14 +15,14 @@ function Layout(props) {
             <header className={styles.header}>
                 {home ? (
                     <>
-                        <img
+                        <Image
                             src="/images/profile.png"
                             className={`${utilsStyles.borderCircle} ${styles.headerHomeImage}`}/>
                         <h1 className={utilsStyles.heading2Xl}>{name}</h1>
                     </>
                 ) : (
                     <>
-                        <img
+                        <Image
                             src="/images/profile.png"
                             className={`${utilsStyles.borderCircle}`}/>
                         <h1 className={utilsStyles.heading2Xl}>{name}</h1>

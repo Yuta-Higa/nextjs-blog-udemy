@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 import Layout, {siteTitle} from '../components/Layout';
 import { getPostsData } from "../lib/post";
 import Head from "next/head";
+import Image from "next/image";
 
 //SSGの場合
 export async function getStaticProps() {
@@ -35,7 +36,7 @@ export default function Home({allPostsData}) {
                     return (
                         <article key={id}>
                             <Link href={`/posts/${id}`}>
-                                <img src={thumbnail} className={styles.thumbnailImage}/>
+                                <Image src={thumbnail} className={styles.thumbnailImage}/>
                             </Link>
                             <Link href={`/posts/${id}`}>
                                 <a className={utilsStyles.boldText}>

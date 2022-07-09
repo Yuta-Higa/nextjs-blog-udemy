@@ -3,7 +3,7 @@ import styles from './layout.module.css'
 import utilsStyles from '../styles/utils.module.css'
 import Link from "next/link";
 import Image from "next/image";
-const name = 'Ukyo'
+const name = 'Yuta'
 export const siteTitle = "next.js blog"
 function Layout(props) {
     const { children, home } = props;

@@ -17,15 +17,12 @@ function Layout(props) {
                     <>
                         <Image
                             src="/images/profile.png"
-                            className={`${utilsStyles.borderCircle} ${styles.headerHomeImage}`}/>
+                            className={`${utilsStyles.borderCircle} ${styles.headerHomeImage}`}
+                            width='8rem' height='8rem'/>
                         <h1 className={utilsStyles.heading2Xl}>{name}</h1>
                     </>
                 ) : (
                     <>
-                        <Image
-                            src="/images/profile.png"
-                            className={`${utilsStyles.borderCircle}`}/>
-                        <h1 className={utilsStyles.heading2Xl}>{name}</h1>
                     </>
                 )}
             </header>
